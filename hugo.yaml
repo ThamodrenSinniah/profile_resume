@@ -1,0 +1,41 @@
+baseURL: "https://example.com/"
+languageCode: "en-us"
+title: "Thamo"
+theme: "github-style"
+pygmentsCodeFences: true
+pygmentsUseClasses: true
+
+
+params:
+  author: "Thamo"
+  description: "A simple human"
+  github: "ThamodrenSinniah"
+  linkedin: "thamodren-sinniah"
+  email: "s.thamodren@gmail.com"
+  url: "https://example.com"
+  # keywords: "testing, life"
+  rss: true
+  lastmod: true
+  userStatusEmoji: "😀"
+  favicon: "/img/github.png"
+  avatar: "/img/avatar.png"
+  headerIcon: "/img/avatar.png"
+  location: "Klang, Malaysia"
+  enableSearch: true
+
+outputs:
+  home:
+    - html
+    - json
+
+outputFormats:
+  json:
+    mediaType: "application/json"
+    baseName: "index"
+    isPlainText: false
+
+frontmatter:
+  lastmod:
+    - "lastmod"
+    - ":fileModTime"
+    - ":default"
